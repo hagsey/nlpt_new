@@ -1,0 +1,70 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<main class="site-main">
+  <div class="site-content">
+
+    <article class="{{post_class}}">
+      <header class="cover post-header">
+        <div class="cover-bg" style="background-image: url('/assets/images/camb-gym-6.jpg')"></div>
+        <div class="cover-content">
+          <div class="inner">
+            {{#if tags}}
+            <div class="post-tags">
+              {{tags separator=""}}
+            </div><!-- .post-tags -->
+            {{/if}}
+            <h1 class="post-title">NLPT Facilities</h1>
+            <a href="#" class="scroll-down square light"><span class="icon-down-custom" aria-hidden="true"></span><span class="screen-reader-text">Scroll Down</span></a>
+          </div><!-- .inner -->
+        </div><!-- .cover-content -->
+      </header><!-- .cover -->
+      <div class="post-content inner">
+
+        {{>"about_navigation"}}
+
+          <section>
+          <h3>Cambridge</h3>
+          <div class="address">
+            <p>460 Thompson Dr, Unit 4</p>
+            <p>Cambridge, Ontario</p>
+            <p>N1T 2K8</p>
+          </div>
+          <p>Our Cambridge location is a 4,000 square foot space with 30-foot ceilings, a massage therapy clinic, a lounge area in the main lobby, and full men’s and women’s washrooms. The gym area has been designed to maximize open space, allowing plenty of room for a wide range of athletic movements. </p>
+          <p>On the north end of Cambridge, we are conveniently located right off of Highway 401 (Townline Exit) and is in close proximity to the Cambridge Center Mall.</p>
+
+          <img class="full-width" src="/assets/images/camb-gym-1.jpg">
+          <img class="full-width" src="/assets/images/camb-gym-5.jpg">
+          <img class="full-width rotate-180" src="/assets/images/camb-gym-2.jpg">
+          <img class="full-width rotate-180" src="/assets/images/camb-gym-3.jpg">
+
+          </section>
+        <section>
+          <h3>Stratford</h3>
+
+          <div class="address">
+            <p>Stratford Rotary Complex</p>
+             <p>353 McCarthy Dr</p>
+             <p> Stratford, Otario N5A 7S7</p>
+          </div>
+          <p>Opened in the spring of 2015, our Stratford gym is housed inside the Stratford Rotary Complex overlooking both ice pads.</p>
+          <p>This space has over 2000 square feet of space for training and can comfortably handle large numbers of athletes and clients.</p>
+          <p>The gym is also air conditioned and has thumbnail img-full change rooms (but no showers) which are provided within the Rotary Complex.</p>
+
+          <img class="full-width" src="/assets/images/strat-gym-1.jpg">
+
+          <img class="full-width" src="/assets/images/strat-gym-2.jpg">
+
+          <img class="full-width" src="/assets/images/strat-gym-3.png">
+        </section>
+
+
+
+      </div><!-- .post-content -->
+    </article><!-- .post -->
+
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+{{/post}}

@@ -1,0 +1,111 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<main class="site-main">
+  <div class="site-content">
+
+    <article class="{{post_class}}">
+      <header class="cover post-header">
+        {{#if feature_image}}
+        <div class="cover-bg" style="background-image: url({{feature_image}})"></div>
+        {{/if}}
+        <div class="cover-content">
+          <div class="inner">
+            {{#if tags}}
+            <div class="post-tags">
+              {{tags separator=""}}
+            </div><!-- .post-tags -->
+            {{/if}}
+            <h1 class="post-title">The 70 Day Challenge</h1>
+            <a href="#" class="scroll-down square light"><span class="icon-down-custom" aria-hidden="true"></span><span class="screen-reader-text">Scroll Down</span></a>
+          </div><!-- .inner -->
+        </div><!-- .cover-content -->
+      </header><!-- .cover -->
+      <div class="post-content inner">
+        {{!< default}}
+
+        <img class="alignleft" src="/assets/images/70-day-2.png" />
+              
+
+        <h3>What is it?</h3>
+
+        <p>The 70 Day Challenge is a 10-week fitness, nutrition, and health program where you receive daily challenges, tasks, habits, and workouts from the coaches of NLPT. Score points by completing as many daily tasks as possible, report back in with the coaches, compete with others in the program, and have one of the most challenging yet rewarding periods of training that you've had in years.</p>
+
+        <img class="alignright" src="/assets/images/fitness-3.jpg" />
+
+        <h3>What benefits can you expect from this program?</h3>
+
+        <p>What you take from this program depends on who you are, what your experience level is, and what your goals are.</p>
+
+        <p>Maybe you've struggled with consistency in the past and need a kick in the butt to get back on the right path.</p>
+
+        <p>Maybe you're tired of your same old routine and just want to shake things up with something different.</p>
+
+        <p>Maybe you've got a certain fitness or weight loss goal you hope to achieve during this time.</p>
+
+        <p>Or maybe you're aware of the looming summer season, and want to stay ahead of the parties, patios, and beverages that are coming your way.</p>
+
+        <h3>Who is it for?</h3>
+
+        <p>You don't have to be advanced or experienced to participate! This program is for anyone 18 and older and who is relatively healthy enough to complete an intense fitness program. If you're unsure if this is a good fit for you, please <a href="mailto:info@mynlpt.com">contact</a> us, and we'd be happy to discuss it with you.</p>
+
+
+        <h3>What is included?</h3>
+
+        <img class="full-width" src="/assets/images/teambuildr_screenshot.png" />
+        <p>As a participant in the program, you'll receive:</p>
+        <ul>
+          <li>Use of our Teambuildr software system (web/iPad/mobile apps available), which we will use to deliver the daily challenges and which you will use to report in to us.</li>
+          <li>10-week training program designed by NLPT and customized for your ability level</li>
+          <li>Access to NLPT training facilities (if not currently a member)</li>
+          <li>NLPT 70 Day Challenge t-shirt</li>
+          <li>The winning team will get their choice of a bottle of wine or Starbucks gift card (1 per person).</li>
+        </ul>
+
+        <h3>How does it work?</h3>
+
+        <p>Participants will be organized into teams of 4. By completing each daily challenge, you'll score points for your team. Team are allowed to self-organize, so if you want to compete with your friends, just put in a request. Bonus points will also be available throughout the competition for completing other challenges such as:</p>
+        <ul>
+          <li>Most workouts completed in a 7-day period.</li>
+          <li>Best performance on a specific fitness test.</li>
+          <li>Best adherance to a nutrition habit</li>
+          <li>Most creative new recipe</li>
+        </ul>
+
+        <h3>What's different this time around?</h3>
+        <p>Past participants might be wondering...is this just a carbon copy of the first 70 Day Challenge that ran back at the end of 2017?</p>
+        <p>Nope.</p>
+        <p>We're not going to spoil all of the surprises just yet, but we have made the following changes to this program:</p>
+        <ul>
+          <li>We've made the nutrition program SIGNIFICANTLY more difficult</li>
+          <li>We've created all new weekly team challenges</li>
+          <li>We've tossed out MANY of the daily challenges that got used last time and replaced them with more interesting and creative tasks</li>
+          <li>Winning team members will get prizes :)</li>
+        </ul>
+
+        <h3>Dates and scheduling</h3>
+
+        <h5>Dates</h5>
+        <p class="no-margin">Registration deadline: Saturday, April 21st, 2018</p>
+        <p class="no-margin">Program start: Saturday, April 21st, 2018</p>
+        <p class="no-margin">Program end & post-competition party: Friday, June 29th, 2018</p>
+
+        <h3>Cost</h3>
+
+        <p class="no-margin">NLPT members: $50</p>
+        <p class="no-margin">non-NLPT members: $349</p>
+        <p class="no-margin">Team registration fee (all 4 must be non-Members): $1200</p>
+
+        <h3>Registration</h3>
+        <p>To sign-up, please email us at <a href="mailto:info@mynlpt.com">info@mynlpt.com</a> and we will be in touch with you about finilizing your registration.</p>
+
+        <img src="/assets/images/strongestloser2.jpg" />
+
+      </div><!-- .post-content -->
+    </article><!-- .post -->
+
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+{{/post}}

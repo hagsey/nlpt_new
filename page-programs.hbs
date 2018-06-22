@@ -1,0 +1,57 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<main class="site-main">
+  <div class="site-content">
+
+    <article class="{{post_class}}">
+      <header class="cover post-header">
+        <div class="cover-bg" style="background-image: url('/assets/images/email-cover.jpg')"></div>
+        <div class="cover-content">
+          <div class="inner">
+            {{#if tags}}
+            <div class="post-tags">
+              {{tags separator=""}}
+            </div><!-- .post-tags -->
+            {{/if}}
+            <h1 class="post-title">{{title}}</h1>
+            <a href="#" class="scroll-down square light"><span class="icon-down-custom" aria-hidden="true"></span><span class="screen-reader-text">Scroll Down</span></a>
+          </div><!-- .inner -->
+        </div><!-- .cover-content -->
+      </header><!-- .cover -->
+
+      <div class="post-content inner">
+        
+        <p>We offer a wide variety of programs for both young and elite athletes, teams, and adults looking to get in the best shape of their lives.</p>
+
+        <div class="programs-container">
+          <div class="program program-athlete">
+            <a class="program-title" href="/nlpt-athlete">Athletes 12+</a>
+          </div>
+          <div class="program program-fitness">
+            <a class="program-title" href="/fitness">Adult Fitness</a>
+          </div>
+          <div class="program program-learn-to-train">
+            <a class="program-title" href="/learn-to-train">Learn to Train</a>
+          </div>
+          <div class="program program-team">
+            <a class="program-title" href="/nlpt-team">Team Training</a>
+          </div>
+          <div class="program program-hp">
+            <a class="program-title" href="/summerhockeytraining">HP Hockey Program</a>
+          </div>
+          <div class="program program-70">
+            <a class="program-title" href="/70-day-challenge">70 Day Challenge</a>
+          </div>
+        </div>
+
+
+
+      </div><!-- .post-content -->
+    </article><!-- .post -->
+
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+{{/post}}

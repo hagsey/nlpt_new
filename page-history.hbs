@@ -1,0 +1,66 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<main class="site-main">
+  <div class="site-content">
+
+    <article class="{{post_class}}">
+      <header class="cover post-header">
+        {{#if feature_image}}
+        <div class="cover-bg" style="background-image: url({{feature_image}})"></div>
+        {{/if}}
+        <div class="cover-content">
+          <div class="inner">
+            {{#if tags}}
+            <div class="post-tags">
+              {{tags separator=""}}
+            </div><!-- .post-tags -->
+            {{/if}}
+            <h1 class="post-title">NLPT History</h1>
+            <a href="#" class="scroll-down square light"><span class="icon-down-custom" aria-hidden="true"></span><span class="screen-reader-text">Scroll Down</span></a>
+          </div><!-- .inner -->
+        </div><!-- .cover-content -->
+      </header><!-- .cover -->
+      <div class="post-content inner">
+
+<section>
+<h2>Origins</h2>
+<p>The story of NLPT over the years is that of slow, incremental growth. We stay focused on becoming the very best at what we do, and let our growth dictate what changes need to be made. </p>
+<img class="alignright" src="/assets/images/history-1.png">
+<p>Although we’re still a small gym, the truth is we used to be much, much smaller. In 2008, Andrew Hopf was mid-way through his Master’s program in Exercise Physiology at the University of Waterloo when he was offered the chance to be the strength coach for the men’s varsity hockey team. It was during this time that Andrew was able to apply his academic knowledge to high-level athletes, and his passion for coaching and teaching became ignited.</p>
+<p>Many people have dreams but never find the courage to act. As anyone that knows him will tell you, Andrew doesn’t suffer from this problem. He knew what he wanted: to start a gym where he could coach on his own terms. </p>
+<p>The only problem was, gyms cost money and Andrew--being a student--had very little. But he did have a van and easy access to some soccer fields. Good enough. Andrew filed the necessary paperwork and Next Level Performance Training Incorporated was born.</p>
+<p>Andrew started small and did everything he could to build a name for himself. He offered to train athletes and teams for free, drove all over the region in the now famous purple “Vanburghini”, and made due with what little equipment he had. In 2010, Andrew eventually built up his clientele and saved enough to put a deposit down on a small space on the east side of Victoria Street in Kitchener.</p>
+</section>
+<section>
+<h2>First gym</h2>
+<img class="alignright" src="/assets/images/history-2.jpg">
+<p>It was then that he called Eric Hagemann, one of his good friends from the University of Waterloo, to see if he might be interested in coming to help with the coaching duties. Eric had graduated from UW alongside Andrew with a degree in Honours Kinesiology, and then moved to Toronto to complete his Master’s in Rehabilitation Science. Like Andrew, Eric was eager to get out of the research lab and apply his knowledge to the real world, so he ditched his lab coat and embarked on a career as a strength and conditioning coach. </p>
+<p>Andrew’s wife, Michelle (then fiancé) also started with NLPT at this point. Also a UW Kinesiology graduate, Michelle had recently finished her graduate studies at the Canadian College of Massage and Hydrotherapy and was starting her career as a Registered Massage Therapist. Her practice steadily grew and quickly served a vital role in keeping the clients and athletes of NLPT healthy and pain-free. </p>
+<img class="alignright" src="/assets/images/history-4.jpg">
+<p>The time in Kitchener was an incredible experience. But after two years on Victoria Street, we made a bold but decisive decision: to relocate to Cambridge. Although we found a great space conveniently located right off of Highway 401, we were more excited about relocating to Andrew’s hometown and getting involved in the youth sports community there. Formal strength and conditioning services weren’t something that was being offered in Cambridge at the time, and we were eager to fill the gap.</p>
+<p>Over the next several years, our gym continued to grow. We saw an explosion in our adult training program, NLPTfit, and began to get more involved with other sport programs such as the Cambridge Lions Football Association and Cambridge Youth Soccer. Additionally, we started training more hockey teams from the Cambridge Minor Hockey Association and Cambridge’s girls hockey program, the Roadrunners. In the summer, our High Performance Summer Program was also seeing a healthy boost in athletes, with more and more junior, collegiate, and professional hockey players joining on each year. </p>
+<img src="/assets/images/history-6.jpg">
+</section>
+<section>
+<h2>Expansions</h2>
+<p>With the growth, we started hiring more staff. Namely Dylan Campion, a kinesiologist from Stratford, Zach Shomphe, a former NLPT athlete who had graduated from Conestoga College with a diploma in Fitness and Health Promotion, and Heather Foell, a former NLPT intern who has since become a Registered Kinesiologist and now runs our NLPTfit program. </p>
+<img class="alignright" src="/assets/images/strat-gym-1.jpg">
+<p>In 2015, our company made another major move: we opened a second gym--NLPT Stratford. </p>
+<p>Although it is a much smaller space than our Cambridge location, the reception from the tight-knit community was incredible. Our adult program was extremely vibrant and we were able to reach a whole new community of young athletes. </p>
+<p>That pretty much brings us up to present day. Both Stratford and Cambridge are doing well, and we’ve since added several more excellent staff members to the mix. Although there has been some decent growth, we’ve certainly got a lot more work to do. Our focus has been and continues to be on getting better, not bigger. </p>
+<p>Thanks for taking the time to read a little bit of our history.</p>
+<p>Train smart,</p>
+<p class="signature">The NLPT Family</p>
+</section>
+
+
+
+      </div><!-- .post-content -->
+    </article><!-- .post -->
+
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+{{/post}}

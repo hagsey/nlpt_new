@@ -1,0 +1,24 @@
+{
+  "name": "curious",
+  "description": "A perfect Ghost theme for an online magazine, journal or personal blog.",
+  "version": "1.4.0",
+  "engines": {
+    "ghost": ">=1.0.0"
+  },
+  "scripts": {
+    "sass": "sass --watch assets/sass/style.scss:assets/css/style.css",
+    "img": "chmod 755 assets/images/* "
+  },
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
+  "author": {
+    "name": "Just Good Themes",
+    "email": "hello@justgoodthemes.com",
+    "url": "https://justgoodthemes.com"
+  },
+  "config": {
+    "posts_per_page": 6
+  }
+}

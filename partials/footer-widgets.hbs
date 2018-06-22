@@ -1,0 +1,55 @@
+<aside class="footer-widgets">
+	<div class="inner-wide">
+		<div class="widget-area">
+			<div class="footer-col first">
+				<section class="widget widget-recent-posts">
+					<h2 class="widget-title">Latest Posts</h2>
+					{{#get "posts" limit="4"}}
+					<ul>
+						{{#foreach posts}}
+						<li>
+							{{#if feature_image}}
+							<a href="{{url}}" class="recent-thumb" style="background-image: url({{feature_image}});"><span class="screen-reader-text">{{title}}</span></a>
+							{{/if}}
+							<div class="recent-title"><a href="{{url}}">{{title}}</a></div>
+							<div class="recent-date">{{date format="MMMM DD, YYYY"}}</div>
+						</li>
+						{{/foreach}}
+					</ul>
+					{{/get}}
+				</section><!-- .widget -->
+			</div>
+			<div class="footer-col middle">
+				<section class="widget widget-recent-posts">
+					<h2 class="widget-title">Upcoming Events</h2>
+
+					<ul>
+						<li>
+							<a href="/summerhockeytraining" class="recent-thumb" style="background-image: url('/assets/images/hp2018logo.png');"><span class="screen-reader-text">HP2018</span></a>
+							<div class="recent-title"><a href="/summerhockeytraining">HP2018</a></div>
+							<p class="recent-description">Our elite summer hockey training program is back.</p>
+							{{!-- <div class="recent-date">July 3, 2018</div> --}}
+						</li>
+
+						<li>
+							<a href="/learn-to-train" class="recent-thumb" style="background-image: url('/assets/images/learn_to_train.png');"><span class="screen-reader-text">Learn to Train</span></a>
+							<div class="recent-title"><a href="/learn-to-train">Learn to Train</a></div>
+							<p class="recent-description">Teaching the fundamentals of training. For athletes 11 and under.</p>
+							{{!-- <div class="recent-date">July 3, 2018</div> --}}
+						</li>
+
+					</ul>
+
+
+				</section><!-- .widget -->
+			</div>
+			<div class="footer-col last">
+				<section class="widget widget-instagram">
+					<h2 class="widget-title">{{@blog.title}} on @instagram</h2>
+					<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/8453affe2d6353d195706db5420f9712.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+				</section><!-- .widget -->
+			</div>
+		</div><!-- .widget-area -->
+	</div><!-- .inner-wide -->
+</aside><!-- .footer-widgets -->

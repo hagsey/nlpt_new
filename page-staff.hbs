@@ -1,0 +1,115 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<main class="site-main">
+  <div class="site-content">
+
+    <article class="{{post_class}}">
+      <header class="cover post-header">
+                <div class="cover-bg" style="background-image: url('/assets/images/content-image-staff-1.png')"></div>
+
+        <div class="cover-content">
+          <div class="inner">
+            {{#if tags}}
+            <div class="post-tags">
+              {{tags separator=""}}
+            </div><!-- .post-tags -->
+            {{/if}}
+            <h1 class="post-title">Staff</h1>
+            <a href="#" class="scroll-down square light"><span class="icon-down-custom" aria-hidden="true"></span><span class="screen-reader-text">Scroll Down</span></a>
+          </div><!-- .inner -->
+        </div><!-- .cover-content -->
+      </header><!-- .cover -->
+      <div class="post-content inner">
+
+      {{>"about_navigation"}}
+
+        <div class="clearfix staff-box row">
+          <div class="col-sm-4">
+            <h2>Andrew Hopf, MSc, CSCS</h2>
+            <h5 class="text-muted">Owner and President</h5>
+            <img class="alignright" src="/assets/images/staff/andrew.jpg">
+          </div>
+          <div class="col-sm-8">
+            <h4>Background</h4> 
+          {{> "bio_hopf"}}
+        </div>
+        </div>
+          <hr>
+
+        <div class="clearfix staff-box row">
+          <div class="col-sm-4">
+            <h2>Eric Hagemann, MSc, CSCS</h2>
+            <h5 class="text-muted">Director of Training</h5>
+            <h5 class="text-muted">Head Strength Coach, Cambridge</h5>
+            <img class="alignright" src="/assets/images/staff/eric.jpg">
+          </div>
+          <div class="col-sm-8">
+            <h4>Background</h4> 
+            {{> "bio_hagemann"}}
+          </div>
+        </div>
+          <hr>
+
+        <div class="clearfix staff-box row">
+          <div class="col-sm-4">
+            <h2>Dylan Campion, R.Kin</h2>
+            <h5 class="text-muted">Head Strength Coach, Stratford</h5>
+            <img class="alignright" src="/assets/images/staff/dylan.jpg">
+          </div>
+          <div class="col-sm-8">
+            <h4>Background</h4> 
+            {{> "bio_campion"}}
+          </div>
+        </div>
+          <hr>
+
+        <div class="clearfix staff-box row">
+          <div class="col-sm-4">
+            <h2>Michelle Miguel, RMT</h2>
+            <h5 class="text-muted">Massage Therapist</h5>
+            <h5 class="text-muted">Operations Manager</h5>
+            <img class="alignright" src="/assets/images/staff/michelle.jpg" />
+          </div>
+          <div class="col-sm-8">
+            <h4>Background</h4> 
+            {{> "bio_miguel"}}
+          </div>
+        </div>
+          <hr>
+
+        <div class="clearfix staff-box row">
+          <div class="col-sm-4">
+            <h2>Scott Patton</h2>
+            <h5>Strength and Conditioning Coach</h5>
+            <img class="alignright" src="/assets/images/logo-main-2.png">
+          </div>
+          <div class="col-sm-8"> 
+            {{> "bio_patton"}}
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="clearfix staff-box row">
+          <div class="col-sm-4">
+            <h2>John Peele</h2>
+            <h5>Strength and Conditioning Coach</h5>
+            <img class="alignright" src="/assets/images/logo-main-2.png">
+          </div>
+          <div class="col-sm-8"> 
+            {{> "bio_peele"}}
+          </div>
+        </div>
+
+
+
+
+      </div><!-- .post-content -->
+    </article><!-- .post -->
+
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+{{/post}}
