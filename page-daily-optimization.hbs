@@ -1,0 +1,92 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<main class="site-main">
+  <div class="site-content">
+
+    <article class="{{post_class}}">
+      <header class="cover post-header">
+        <div class="cover-bg" style="background-image: url('/assets/images/daily-banner.jpg')"></div>
+        <div class="cover-content">
+          <div class="inner">
+            {{#if tags}}
+            <div class="post-tags">
+              {{tags separator=""}}
+            </div><!-- .post-tags -->
+            {{/if}}
+            <h1 class="post-title">Daily Optimization</h1>
+            <a href="#" class="scroll-down square light"><span class="icon-down-custom" aria-hidden="true"></span><span class="screen-reader-text">Scroll Down</span></a>
+          </div><!-- .inner -->
+        </div><!-- .cover-content -->
+      </header><!-- .cover -->
+      <div class="post-content inner">
+
+
+
+<h2 class="text-muted text-center">"Your best day, every day."</h2>
+
+<section class="section-div">
+  <p>Every day you are faced with a choice: will today be an ordinary day or an energetic, enjoyable, and productive day? Combining principles and practices from the world's top performers with cutting edge science, our Daily Optimization Program will teach how you how to optimize every aspect of your day.</p>
+</section>
+
+<section class="section-div">
+  <h4>Includes:</h4>
+    
+  <ul>
+    <li>Customized nutrition</li>
+    <li>Enhanced sleep practices</li>
+    <li>Meditation practices</li>
+    <li>Cold therapy</li>
+    <li>Light environment modification</li>
+    <li>Exercise preparation and recovery</li>
+    <li>Personalized staged habit formation</li>
+    <li>Progress measurement and quantification</li>
+  </ul>
+</section>
+
+<section class="section-div">
+
+    <div class="opt-icon-row">
+      <img src="/assets/images/opt-shower.png" class="menu-item opt opt-shower" />
+      <img src="/assets/images/opt-meditation.png" class="menu-item opt opt-shower" />
+      <img src="/assets/images/opt-sleep.png" class="menu-item opt opt-shower" />
+      <img src="/assets/images/opt-sun.png" class="menu-item opt opt-shower" />
+      <img src="/assets/images/opt-water.png" class="menu-item opt opt-shower" />
+    </div>
+</section>
+
+<section class="section-div">
+  <h4>Benefits:</h4>
+
+  <ul> 
+    <li>Increased energy levels throughout the day</li>
+    <li>Deeper and more restful sleep</li>
+    <li>Increased exercise capacity</li>
+    <li>Increased exercise gains and recovery</li>
+    <li>Reduced stress</li>
+    <li>Enhanced focus</li>
+    <li>Decreased hunger and food cravings</li>
+    <li>Increased cognitive abilities (memory & attention)</li>
+    <li>Reduced body fat and increased muscle mass</li>
+    <li>Enhanced cardiovascular health</li>
+  </ul>
+</section>
+<section>
+
+  <h4>Cost</h4>
+
+  <p>$85/month for individuals and families for 4 months</p>
+  <p>Contact Scott for your free consultation:</p>
+
+  <p><i class="fa fa-mobile"></i> 519.841.8971</p>
+  <p><i class="fa fa-envelope"></i> <a href="mailto:optimizedscott@gmail.com">optimizedscott@gmail.com</a></p>
+</section>
+
+      </div><!-- .post-content -->
+    </article><!-- .post -->
+
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+{{/post}}

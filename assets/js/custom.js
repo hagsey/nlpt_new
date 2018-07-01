@@ -30,6 +30,16 @@
 			e.preventDefault();
 		});
 
+
+
+		 // 70 Day Challenge table
+
+    $("tbody.scoreboard").on("click", "tr.team", function() {
+      var $target = $(this).next();
+
+      $target.slideToggle();
+    });
+
 		// Header adjustments
 		adjustCover();
 		var lazyResize = debounce(adjustCover, 200, false);
@@ -68,7 +78,7 @@
 			onKeyUp : true,
 			onPageLoad : true,
 			includepages : true,
-			info_template : '<div class="results-info">Posts found: {{amount}}</div>',
+			info_template : '<div class="results-info">Found: {{amount}}</div>',
 			result_template : '<div class="result-item"><a href="{{link}}"><div class="result-title">{{title}}</div><div class="result-date">{{pubDate}}</div></a></div>'
 		});
 
@@ -94,6 +104,19 @@
 			searchField.clear();
 			e.preventDefault();
 		});
+
+		// Contact bar
+		    $(".contact-button").on("click", function() {
+        $(".contact-modal").show();
+        $(".modal-layer").show();
+        $("body").css("overflow", "hidden");
+
+        $(".modal-layer").on("click", function() {
+            $(".contact-modal").hide();
+            $(".modal-layer").hide();
+            $("body").css("overflow", "visible");
+        });
+    });
 
 		// Post reading time
 		$('.post-template').find('.post').readingTime();
@@ -153,8 +176,8 @@
 			$(element).find('.cover-bg').css('top','');
 		}
 		else {
-			$(element).outerHeight(newHeight);
-			$(element).find('.cover-bg').css('top',offsetHeight);
+			// $(element).outerHeight(newHeight);
+			// $(element).find('.cover-bg').css('top',offsetHeight);
 		}
 	}
 

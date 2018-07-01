@@ -1,0 +1,37 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<main class="site-main">
+  <div class="site-content">
+      <div style="padding-top:75px;" class="post-content inner">
+
+        <h2>All Posts</h2>
+        <div class="widget-area">
+          <div class="footer-col first">
+            <section class="widget widget-recent-posts">
+              {{#get "posts" limit="all"}}
+              <ul>
+                {{#foreach posts}}
+                <li>
+                  {{#if feature_image}}
+                  <a href="{{url}}" class="recent-thumb" style="background-image: url({{feature_image}});"><span class="screen-reader-text">{{title}}</span></a>
+                  {{/if}}
+                  <div class="recent-title"><a href="{{url}}">{{title}}</a></div>
+                  <div class="recent-date">{{date format="MMMM DD, YYYY"}}</div>
+                </li>
+                {{/foreach}}
+              </ul>
+              {{/get}}
+            </section><!-- .widget -->
+          </div>
+        </div>
+
+
+      </div><!-- .post-content -->
+    </article><!-- .post -->
+
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+{{/post}}

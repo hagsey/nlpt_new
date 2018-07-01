@@ -1,6 +1,8 @@
-<header class="site-header">
+<header class="site-header primary-site-header">
+	{{> alert_bar}}
 	<div class="inner-wide">
 		<p class="site-logo"><a href="{{@blog.url}}"><img src="/assets/images/logo-main-2.png" alt="{{@blog.title}}" /></a></p>
+	
 {{!-- 		{{#if @blog.logo}}
 		<p class="site-logo"><a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a></p>
 		{{/if}}
@@ -12,7 +14,7 @@
 		{{#if @blog.navigation}}
 			{{navigation}}
 		{{/if}}
-		<a class="search-toggle" href="#"><span class="screen-reader-text">Search</span><span class="icon-search" aria-hidden="true"></span></a>
+		{{!-- <a class="search-toggle" href="#"><span class="screen-reader-text">Search</span><span class="icon-search" aria-hidden="true"></span></a> --}}
 		<a class="sidebar-toggle" href="#"><span class="screen-reader-text">Open Sidebar</span><span class="icon-nav-custom" aria-hidden="true"></span></a>
 	</div><!-- .inner-wide -->
 </header><!-- .site-header -->

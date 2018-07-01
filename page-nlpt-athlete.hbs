@@ -8,9 +8,7 @@
 
     <article class="{{post_class}}">
       <header class="cover post-header">
-        {{#if feature_image}}
-        <div class="cover-bg" style="background-image: url({{feature_image}})"></div>
-        {{/if}}
+        <div class="cover-bg" style="background-image: url('/assets/images/content-image-athlete-3.png')"></div>
         <div class="cover-content">
           <div class="inner">
             {{#if tags}}
@@ -25,7 +23,7 @@
       </header><!-- .cover -->
       <div class="post-content inner">
 
-          <section>
+          <section class="section-div">
           <img class="alignright" src="/assets/images/content-image-1.jpg">
           <p>For athletes in the Cambridge, Kitchener and Waterloo area, there is no better environment to train in than NLPT. Our intimate, and hard-working atmosphere creates an environment that simply can not be replicated in your typical “gym”.</p>
 
@@ -42,7 +40,7 @@
           </section>
           <img src="/assets/images/email-cover.jpg" class="full-width" />
 
-          <section>
+          <section class="section-div">
             <h1>Program philosophy</h1>
 
             <h3>Programming</h3>
@@ -66,7 +64,7 @@
             </blockquote>
           </section>
             <img src="/assets/images/content-image-athlete-1.jpg" class="full-width" />
-          <section>
+          <section class="section-div">
             <h1>How it works</h1>
             <h3>Step 1: Assessment</h3>
             <p>The first step in the process of training is to schedule a 1-on-1 assessment with a strength and conditioning coach. The purpose of this assessment is to give us a chance to get to know the athlete as well as possible, so that we can craft a program that's tailored to his or her individual needs.</p>
@@ -108,49 +106,47 @@
           </section>
           
             <img src="/assets/images/content-image-athlete-3.png" class="full-width" />
-          <section>
-            <h1>Pricing and enrollment</h1>
-            <div class="row">
-              <div>
-                <h3>Silver</h3>
-                <h4>$89 <span>per month</h4>
-                <p><b>Features</b></p>
+          <section class="section-div">
+            <h2>Pricing and enrollment</h2>
+              
+                <div class="category">
+                  <h4 class="category-top">Option 1</h4>
+                  <h3 class="category-bottom" id="open-membership">Silver Membership </h3>
+                </div>
+
+                <p>$89 <span>per month</span></p>
+                <h5 class="no-margin">Features</h5>
                 <p>1 session per week</p>
-                <br>
-                <p><b>Perfect for</b></p>
+                <h5 class="no-margin">Perfect for</h5>
                 <p>In-season athletes who are older than 14 and have highly demanding schedules.</p>
-              </div>
 
-              <div>
-                <h3>Gold</h3>
-                <h4>$159 <span>per month</span></h4>
-                <p><b>Features</b></p>
+                <div class="category">
+                  <h4 class="category-top">Option 2</h4>
+                  <h3 class="category-bottom" id="open-membership">Gold Membership </h3>
+                </div>
+
+                <p>$159 <span>per month</span></p>
+                <h5 class="no-margin">Features</h5>
                 <p>2 sessions per week</p>
-                <br>
-                <p><b>Perfect for</b></p>
+                <h5 class="no-margin">Perfect for</h5>
                 <p>Younger athletes (under 14) who are newer to training. This option works well at any time of the year.</p>
-              </div>
 
-              <div>
-                <h3>Platinum</h3>
-                <h4>$219 <span>per month</h4>
-                <p><b>Features</b></p>
+                <div class="category">
+                  <h4 class="category-top">Option 3</h4>
+                  <h3 class="category-bottom" id="open-membership">Platinum Membership </h3>
+                </div>
+
+                <p>$219 <span>per month</span></p>
+                <h5 class="no-margin">Features</h5>
                 <p>3 sessions per week</p>
-                <br>
-                <p><b>Perfect for</b></p>
+                <h5 class="no-margin">Perfect for</h5>
                 <p>Off-season training or if the athlete has a lighter competitive schedule.</p>
-              </div>
-            </div>
+              </section>
+              <section class="section-div">
             <h2>How to register</h2>
             <p>To get started, please send us an email at <a href="mailto:info@mynlpt.com">info@mynlpt.com</a> and we will be in touch with you shortly about scheduling an assessment, or to set up a tour of the gym.</p>
-            <blockquote>
-              <p>"NLPT is like a second home and family to me. The level of intensity is through the roof, but still having some laughs along the way—the perfect combination."</p>
-              <p>Zach K, 16</p>
-            </blockquote>
-
           </section>
-            <img src="/assets/images/content-image-athlete-2.jpg" class="full-width" />
-        {{!-- {{> "contact_bar"}} --}}
+        {{> "contact_bar"}}
 
 
       </div><!-- .post-content -->
