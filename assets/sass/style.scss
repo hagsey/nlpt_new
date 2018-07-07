@@ -729,7 +729,12 @@ video {
 .fluid-width-video-wrapper {
 	margin: 0 0 30px;
 }
+img.alignright,
+img.alignleft,
+img.full-width {
+	    box-shadow: 0 5px 30px 5px rgba(0,0,0,.2);
 
+}
 /* Alignment */
 .alignleft {
 	float: left;
@@ -919,12 +924,27 @@ input[type="button"].square {
 	color: #111;
 }
 
+.button-active,
 .button:hover,
 .square:hover {
 	background-color: $color-accent;
 	border-color: $color-accent;
 	color: #111;
 }
+.btn {
+	font-family: $heading-font;
+	background: $color-accent;
+	color: black;
+	font-weight: 600;
+	padding: 10px 20px;
+	display: inline-block;
+	border: none;
+	margin-bottom: 15px;
+}
+.btn:hover {
+	background: #e2d11b;
+}
+
 
 /* Custom icons */
 .icon-up-custom,
@@ -1123,7 +1143,7 @@ input[type="button"].square {
 	position: relative;
 }
 .site-main {
-	margin-top: 65px;
+	margin-top: 65px; //Shifts content down for navbar
 }
 .inner-wide {
 	margin: 0 auto;
@@ -1152,8 +1172,7 @@ input[type="button"].square {
 	}
 
 	@media only screen and (max-width: 860px) {
-	grid-template-columns: 1fr 1fr;
-
+		grid-template-columns: 1fr 1fr;
   }
 
 }
@@ -1231,7 +1250,7 @@ input[type="button"].square {
     margin-top: 10px;
   }
 }
-.category {
+.category + .category {
   margin-top: 5em;
 }
 .bg-gray {
@@ -2557,6 +2576,65 @@ nav .submenu {
  * ----------------------------------------------------------------------------
  */
 
+ /* Barbell calc */
+
+ .bb-container {
+ 	display: flex;
+ 	flex-wrap: nowrap;
+ 	align-items: center;
+ }
+ .barbell {
+ 	height: 20px;
+ 	width: 350px;
+ 	background: #555;
+
+ 	@media only screen and (max-width: 600px) {
+ 		width: 150px;
+ 	}
+ 	@media only screen and (max-width: 450px) {
+ 		width: 50px;
+ 	}
+ }
+
+ .plate {
+ 	height: 220px;
+ 	width: 25px;
+ 	background: #dadada;
+ 	cursor: pointer;
+ 	margin-right: 3px;
+ 	font-size: 10px;
+ 	font-weight: 600;
+ 	font-family: $heading-font;
+ 	text-align: center;
+ }
+ .plate-2-5 {
+ 		height: 50px;
+ }
+ .plate-5 {
+ 		height: 75px;
+ }
+ .plate-10 {
+ 		height: 100px;
+ }
+ .plate-25 {
+ 		height: 140px;
+ }
+ .plate-35 {
+	 	height: 180px;
+ }
+ .plate-45 {}
+
+ .plate-active {
+ 	background: #74b9ff;
+ }
+ .bb-total span {
+ 	margin-left: 10px;
+ }
+ .error {
+ 	color: #d0170b;
+ 	font-size: 12px;
+ 	font-style: italic;
+ }
  /* 70 DAY */
 
 tr.team {
@@ -2581,7 +2659,8 @@ tr.people {
 	top: -15px;
 	font-size: 12px;
 }
- /*Error */
+ /*Contact */
+
  .staff-name {
  	display: flex;
  	justify-content: space-between;
@@ -2595,6 +2674,14 @@ tr.people {
  		margin-left: 10px;
  	}
  }
+
+ /* Staff page */
+
+ .staff-box img.alignright {
+	max-width: 40%;
+}
+ /*Error page */
+
  .error-container {
  	padding: 100px 0;
  	h1 {
@@ -2616,7 +2703,7 @@ tr.people {
  	}
  }
 
- /* DAILY OPT */
+ /* Daily optimization page */
 .opt-icon-row {
   display: flex;
   justify-content: space-between;
@@ -2625,6 +2712,8 @@ tr.people {
   height: 105px;
   width: 105px;
 }
+
+/* Contact modal */
 
 .contact-button {
   position: fixed;
@@ -2681,25 +2770,8 @@ tr.people {
   z-index: 2;
 }
 
-.main-about {
+/* Programs page */
 
-}
-.btn {
-	font-family: $heading-font;
-	background: $color-accent;
-	color: black;
-	font-weight: 600;
-	padding: 10px 20px;
-	display: inline-block;
-	border: none;
-	margin-bottom: 15px;
-}
-.btn:hover {
-	background: #e2d11b;
-}
-.staff-box img.alignright {
-	max-width: 40%;
-}
 .programs-container {
 	margin-bottom: 60px;
 }
@@ -2810,19 +2882,8 @@ tr.people {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   justify-items: center;
-
-  // @media (min-width: $mq-sm) {
-  //   grid-template-columns: 1fr 1fr 1fr 1fr;
-  // }
-
-  // @media (min-width: $mq-md) {
-  //   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  // }
-  // @media (min-width: $mq-lg) {
-  //   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  // }
-
 }
+
 .player {
 	margin-bottom: 15px;
 }
@@ -2844,7 +2905,6 @@ tr.people {
   width: 125px;
     box-shadow: 1px 1px 3px 1px #736f6f;
     height: 125px;
-    // background: url(../images/athletes/default.jpg);
     background-size: cover;
     background-position: center center;
     margin-bottom: 7px;
@@ -2856,21 +2916,9 @@ tr.people {
   grid-gap: 15px;
   justify-items: center;
 
-  // @media (min-width: $mq-sm) {
-  //   grid-template-columns: 1fr 1fr 1fr 1fr;
-  // }
-
-  // @media (min-width: $mq-lg) {
-  //   grid-gap: 20px;
-  // }
-
   .player-img {
     width: 170px;
     height: 170px;
-    // @media (min-width: $mq-lg) {
-    //   width: 175px;
-    //   height: 175px;
-    // }
   }
 }
 /**

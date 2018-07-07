@@ -1,0 +1,45 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<main class="site-main">
+  <div style="margin-top:110px"class="site-content">
+
+      <div class="post-content inner">
+        <section class="section-div">
+          <h2>Barbell Calculator</h2>
+
+          <div>
+            <h4 style="display:inline-block;">BB weight:</h4>
+            <p class="bb-option button button-active">45</p>
+            <p class="bb-option button">60</p>
+            
+          </div>
+          <div>
+            <h4 style="display:inline-block;">Total:</h4>
+            <input type="text" style="display:inline-block;" class="bb-total" placeholder="Weight" value="" />
+            <p class="error"></p>
+          </div>
+            
+          <div class="bb-container">
+            <div class="plate plate-2-5" data-val="2-5">2.5</div>
+            <div class="plate plate-5" data-val="5">5</div>
+            <div class="plate plate-5" data-val="5">5</div>
+            <div class="plate plate-10" data-val="10">10</div>
+            <div class="plate plate-10" data-val="10">10</div>
+            <div class="plate plate-25" data-val="25">25</div>
+            <div class="plate plate-35" data-val="35">35</div>
+            <div class="plate plate-45" data-val="45">45</div>
+            <div class="plate plate-45" data-val="45">45</div>
+            <div class="plate plate-45" data-val="45">45</div>
+            <div class="plate plate-45" data-val="45">45</div>
+            <div class="plate plate-45" data-val="45">45</div>
+            <div class="barbell"></div>
+          </div>
+        </section>
+      </div><!-- .post-content -->
+
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+{{/post}}

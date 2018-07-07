@@ -858,6 +858,11 @@ video {
 .fluid-width-video-wrapper {
   margin: 0 0 30px; }
 
+img.alignright,
+img.alignleft,
+img.full-width {
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.2); }
+
 /* Alignment */
 .alignleft {
   float: left;
@@ -1025,11 +1030,25 @@ input[type="button"].square {
   border-color: #111;
   color: #111; }
 
+.button-active,
 .button:hover,
 .square:hover {
   background-color: #ffea00;
   border-color: #ffea00;
   color: #111; }
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  background: #ffea00;
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  display: inline-block;
+  border: none;
+  margin-bottom: 15px; }
+
+.btn:hover {
+  background: #e2d11b; }
 
 /* Custom icons */
 .icon-up-custom,
@@ -1279,7 +1298,7 @@ input[type="button"].square {
 .category .category-bottom {
   margin-top: 10px; }
 
-.category {
+.category + .category {
   margin-top: 5em; }
 
 .bg-gray {
@@ -2480,6 +2499,60 @@ nav .submenu {
  * 11. Components
  * ----------------------------------------------------------------------------
  */
+/* Barbell calc */
+.bb-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+.barbell {
+  height: 20px;
+  width: 350px;
+  background: #555; }
+  @media only screen and (max-width: 600px) {
+    .barbell {
+      width: 150px; } }
+  @media only screen and (max-width: 450px) {
+    .barbell {
+      width: 50px; } }
+
+.plate {
+  height: 220px;
+  width: 25px;
+  background: #dadada;
+  cursor: pointer;
+  margin-right: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
+
+.plate-2-5 {
+  height: 50px; }
+
+.plate-5 {
+  height: 75px; }
+
+.plate-10 {
+  height: 100px; }
+
+.plate-25 {
+  height: 140px; }
+
+.plate-35 {
+  height: 180px; }
+
+.plate-active {
+  background: #74b9ff; }
+
+.bb-total span {
+  margin-left: 10px; }
+
+.error {
+  color: #d0170b;
+  font-size: 12px;
+  font-style: italic; }
+
 /* 70 DAY */
 tr.team {
   cursor: pointer;
@@ -2502,7 +2575,7 @@ tr.people {
   top: -15px;
   font-size: 12px; }
 
-/*Error */
+/*Contact */
 .staff-name {
   display: flex;
   justify-content: space-between;
@@ -2514,6 +2587,11 @@ tr.people {
   .contact-info-locations div + div {
     margin-left: 10px; }
 
+/* Staff page */
+.staff-box img.alignright {
+  max-width: 40%; }
+
+/*Error page */
 .error-container {
   padding: 100px 0; }
   .error-container h1 {
@@ -2531,7 +2609,7 @@ tr.people {
     width: 200px;
     margin: 0 auto; }
 
-/* DAILY OPT */
+/* Daily optimization page */
 .opt-icon-row {
   display: flex;
   justify-content: space-between; }
@@ -2540,6 +2618,7 @@ tr.people {
   height: 105px;
   width: 105px; }
 
+/* Contact modal */
 .contact-button {
   position: fixed;
   border-radius: 0;
@@ -2589,22 +2668,7 @@ tr.people {
   background: rgba(39, 39, 39, 0.6);
   z-index: 2; }
 
-.btn {
-  font-family: "Montserrat", sans-serif;
-  background: #ffea00;
-  color: black;
-  font-weight: 600;
-  padding: 10px 20px;
-  display: inline-block;
-  border: none;
-  margin-bottom: 15px; }
-
-.btn:hover {
-  background: #e2d11b; }
-
-.staff-box img.alignright {
-  max-width: 40%; }
-
+/* Programs page */
 .programs-container {
   margin-bottom: 60px; }
 
