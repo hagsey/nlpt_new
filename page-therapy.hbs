@@ -4,6 +4,8 @@
 
 {{!-- Everything inside the #post tags pulls data from the page --}}
 {{#post}}
+
+  
 <main class="site-main">
   <div class="site-content">
 
@@ -17,15 +19,18 @@
               {{tags separator=""}}
             </div><!-- .post-tags -->
             {{/if}}
-            <h1 class="post-title">Massage Therapy</h1>
+            <h1 class="post-title">Therapy Team</h1>
             <a href="#" class="scroll-down square light"><span class="icon-down-custom" aria-hidden="true"></span><span class="screen-reader-text">Scroll Down</span></a>
           </div><!-- .inner -->
         </div><!-- .cover-content -->
       </header><!-- .cover -->
+      <div class="book-button">
+        {{>"massage_book"}}
+      </div>
       <div class="post-content inner">
 
 
-
+        <h5 class="staff-title">Massage Therapist</h5>
         <h2>Michelle Miguel, BSc, RMT</h2>
 
         <img class="alignright img-shadow-lg" src="/assets/images/staff/michelle.jpg">
@@ -44,7 +49,7 @@
           <li>Sport Massage at Varsity Athletics at University of Waterloo 2011</li>
           <li>Trainer for the 2011 Major Bantam Cambridge Hawks</li>
         </ul>
-        <h2>Availability</h2>
+        <h4>Availability</h4>
         <ul>
           <li>Mondays: 12pm - 7pm</li>
           <li>Tuesdays: 7am - 3pm</li>
@@ -52,14 +57,48 @@
           <li>Thursdays: 10:30am - 5:30pm</li>
         </ul>
 
-        <h2>Rates</h2>
+        <h4>Rates</h4>
         <p class="no-margin">30 minutes: $50 +HST</p>
         <p class="no-margin">60 minutes: $80 +HST</p>
-        <p>90 minutes: $115 +HST</p>
+        <p>90 minutes: $115 +HST</p>        
+
+        <hr>
+
+        <h5 class="staff-title">Physiotherapist</h5>
+        <h2>David Albines, PT, CSCS</h2>
+
+        {{!-- <img class="alignright img-shadow-lg" src="/assets/images/staff/michelle.jpg"> --}}
+
+        {{> "bio_albines"}}
+
+        <h4>Availability</h4>
+        <p>TBD</p>
+
+        <h4>Rates</h4>
+        <p>TBD</p>
+
+        <hr>
+
+        <h5 class="staff-title">Certified Nutritionist</h5>
+        <h2>Nick Plagos</h2>
+
+        {{!-- <img class="alignright img-shadow-lg" src="/assets/images/staff/michelle.jpg"> --}}
+
+        <h4>Availability</h4>
+        <p>TBD</p>
+
+        <h4>Rates</h4>
+        <p>TBD</p>
+
+        <hr>
 
         <h2>How to book</h2>
-        <p>To book a massage with Michelle, please send an email to <a class="email-button button" href="mailto:nlpt.massagetherapy@gmail.com">nlpt.massagetherapy@gmail.com</a> or call us at (519) 620-9898.</p>
 
+        <h5>Online</h5>
+        {{>"massage_book"}}
+
+        <h5>By phone</h5>
+        <p>(519) 620-9898</p>
 
       </div><!-- .post-content -->
     </article><!-- .post -->
