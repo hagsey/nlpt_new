@@ -2736,6 +2736,12 @@ tr.people {
   background-position: center;
   position: relative; }
 
+.program-combine {
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("/assets/images/content-image-4-team.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
 .program-70 {
   background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("/assets/images/content-image-adult-4.jpg");
   background-size: cover;
